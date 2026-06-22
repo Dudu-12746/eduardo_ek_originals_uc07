@@ -31,10 +31,12 @@ p {
   text-align: center;
   
 }
-.logo {
+.div-sua-logo {
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 20px;
+  height: 20px;
 }
 .logo img {
   width: 150px;
@@ -219,3 +221,284 @@ body{
     font-size: 14px;
     color: #aaa;
 }
+
+
+.produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px;
+}
+
+.imagem-produto img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.info-produto h1{
+    font-size: 45px;
+}
+
+.info-produto h2{
+    font-size: 35px;
+}
+
+.tamanhos{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tamanhos button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comprar{
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.item img{
+    width: 120px;
+    border-radius: 10px;
+}
+
+.info{
+    flex: 1;
+    margin-left: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.total{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.finalizar{
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.conta {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.conta h1 {
+    margin-bottom: 20px;
+}
+.conta form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.conta input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.conta button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.voltar {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #000, #444);
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.pesquisa-container{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.barra-pesquisa{
+    width: 400px;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-pesquisa{
+    padding: 15px 25px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.resultados{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.produto{
+    width: 250px;
+    background: #201f1f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.produto img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.produto h3{
+    font-size: 24px;
+    color: white;
+}
+
+.produto p{
+    color: rgb(209, 204, 204);
+    margin-bottom: 20px;
+    text-align: left;
+}
+section{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+section h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+
+form{
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(221, 4, 4, 0.534);
+     display: flex;
+     flex-direction: column;/*organiza os elementos em coluna*/
+      gap: 20px;
+     
+
+}
+input,textarea{
+    padding: 15px;
+    border: 1px solid rgb(223, 220, 220);
+    border-radius: 5px;
+}
+textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+.botoes{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+
+}
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btnLimpa{
+    background-color: rgb(245, 20, 4);
+}
+#btnEnviar{
+    background-color: rgb(4, 255, 171);
+}
+footer{
+    background-color: #1d1c1c6e;
+    color: rgb(219, 210, 210);;
+    text-align: center;
+    padding: 10px;
+}
+.sobre{
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sobre h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.sobre p{
+    color: white;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn-voltar{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-voltar:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
