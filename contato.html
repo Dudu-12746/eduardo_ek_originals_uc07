@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Ek vision</title>
 </head>
-
+ 
 <body>
     <header>
-        <!-- Logomarca -->
-        
-        </div>
         <nav class="menu">
-            <a href="#novidades">Novidaes </a>
-            <a href="camisetas.html">Camisetas </a>
+            <a href="#novidades">Novidades</a>
+            <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
-            <a href="calcas.html">Calcas</a>
-            <a href="acessorios.html">Acessórios</a>
+            <a href="calcas.html">Calças</a>
+            <a href="tenis.html">Tênis</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
-            <a href="pedidos.html">pedidos</a>
+            <a href="pedidos.html">Pedidos</a>
             <a href="pesquisa.html">Pesquisa</a>
             <a href="sobre.html">Sobre</a>
-
         </nav>
     </header>
+ 
     <main>
-         <section id="contato">
-        <h2>Fale conosco</h2>
-        <form action="#" method="post" id="formcontato">
-            <!-- <label for="nome">Nome:</label> -->
-            <input type="text" id="nome"name="nome" placeholder="Digite seu nome"required>
-            <!-- <label for="email">Email:</label> -->
-            <input type="email" id="email" name="email" placeholder="Digite seu email " required>
-            <!-- <label for="telefone">Telefone:</label> -->
-            <input type="tel" id="telefone" name="telefone" placeholder="Digitem seu telefone" required>
-            <!-- <label for="mensagem">Mensagem:</label> -->
-            <textarea id="mensagem" name="mensagem" placeholder="Digitem sua mensagem" required></textarea>
-        </form>
-        
-        <div class="botoes">
-            <button type="reset" value="Limpa dados" id="btnLimpa">Limpa formulario</button>
-            <button type="submit" value="Enviar dados" id="btnEnviar">Enviar mensagem</button>
-        </div>
-
-<p id="mensagem"></p>
-
-
-
-    </section>
-
-</main>
-    <!--rodape da pagina-->
-<footer>
-    <p>© 2026 [Dev site]. Todos os direitos reservados.CNPJ: 00.000.000/0001-00 | [Políticas de Privacidade] | [Termos de Uso]Desenvolvido com ❤️ por [Dev site]</p>
-</footer>
-
-        
-    
+        <section id="contato">
+            <h2>Fale conosco</h2>
+            <form id="formContato">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+ 
+                <div class="botoes">
+                    <button type="button" id="btnLimpar">Limpar formulário</button>
+                    <button type="button" id="btnEnviar">Enviar mensagem</button>
+                </div>
+            </form>
+ 
+            <p id="msgFeedback"></p>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>© 2026 [Dev site]. Todos os direitos reservados. CNPJ: 00.000.000/0001-00 | [Políticas de Privacidade] | [Termos de Uso] Desenvolvido com ❤️ por [Dev site]</p>
+    </footer>
+ 
+    <script src="script.js"></script>
 </body>
 </html>
+ 
