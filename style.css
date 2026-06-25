@@ -5,14 +5,14 @@ h1 {
   font-weight: 900;
 }
 h2 {
-  color: rgb(240, 234, 234);
+  color: rgb(24, 23, 23);
   text-align: center;
   font-size: 50px;
   font-weight: 900;
   
 }
 h3 {
-  color: rgb(224, 221, 221);
+  color: rgb(32, 31, 31);
   text-align: center;
   font-size: 30px;
   font-weight: 900;
@@ -20,7 +20,7 @@ h3 {
 p {
   font-size: 20px;
   text-align: center;
-  color: rgb(232, 232, 236);
+  color: rgb(21, 21, 22);
 }
 
 .texto {
@@ -42,66 +42,113 @@ p {
   width: 150px;
 
 }
-.icones {
-  
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  padding: 20px;
-   background: transparent;
-    position: absolute;
-    width: 100%;
-     top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*seleto universal para aplicar estilos a todos los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-   
 
-.btn{
-    background: #ebeaea;
-    color: rgb(31, 29, 28);
+body {
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Ajuste aqui a opacidade (0 a 1) */
+    z-index: -1;
+    
+}
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*separa os elementos do header*/
+
+}
+nav a{
+    color: rgb(33, 56, 52);
+    text-decoration: none;/*remove o sublinhado dos links*/
+    margin-left: 50px;
+    font-weight:bold;/*deixa os links em negrito*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+nav a:hover{
+    color: #7ecee29d;/*muda a cor do link quando o mouse passa por cima*/
+    
+}
+
+
+section{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+section h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+form{
+    padding: 30px;
+    border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(221, 4, 4, 0.534);
+     display: flex;
+     flex-direction: column;/*organiza os elementos em coluna*/
+      gap: 20px;
+     
+
+}
+
+
+.botoes{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+
+}
+button{
+    padding: 15px;
     border: none;
-    padding: 12px 25px;
     border-radius: 5px;
+    color: white;
     cursor: pointer;
-    font-size: 18px;
-}
-.menu {
-   display: flex;
-    gap: 40px; /* espaço entre as palavras */
-    text-align: center;
-    justify-content: center;
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
 
-.menu a{
-    color: rgb(245, 241, 241);
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a{
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-   
-}
-.produtos{
-    
-  
-    width: 80%;
-    margin: 450px auto 0 auto; /* diminui esse valor */
-    text-align: center;
+    margin: 0 10px;
 }
 
-    
-
-
-.produtos h2{
-    font-size: 40px;
-    margin-bottom: 40px;
+footer a:hover{
+    color: #ff6600;
 }
-
 .cards{
     display: flex;
     justify-content: center;
@@ -112,7 +159,7 @@ p {
 
 .card{
     width: 250px;
-    background: #201f1f;
+    background: #ebe8e8;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
@@ -136,34 +183,6 @@ p {
     margin-bottom: 20px;
     font-weight: bold;
 }
-.categorias{
-    padding: 100px 50px;
-    text-align: center; 
-    margin-top: 50px;
-}
-
-
-.categorias h2{
-    font-size: 45px;
-    color: rgb(223, 219, 219);
-    margin-bottom: 40px;
-}
-
-.grid-categorias{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.categoria{
-    width: 280px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .categoria img{
     width: 100%;
     height: 350px;
@@ -183,13 +202,7 @@ p {
     font-size: 28px;
     font-weight: bold;
 }
-body{
-    background-image: url("../img/fundo.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 .rodape{
     background-color: #111;
     color: white;
@@ -234,6 +247,13 @@ body{
 .imagem-produto img{
     width: 500px;
     border-radius: 10px;
+}
+.card img{
+    transition: 0.3s;
+}
+
+.card img:hover{
+    transform: scale(1.05);
 }
 
 .info-produto h1{
@@ -382,8 +402,8 @@ button{
 }
 
 .produto{
-    width: 250px;
-    background: #201f1f;
+    width: 500px;
+    background: #d6d2d27c;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -500,5 +520,99 @@ footer{
     transform: scale(1.05);
     transition: 0.3s;
 }
+.faq{
+    text-align: center;
+    border-radius: 10px;
+    height: 500px;
 
+}
+.card-favorito {
+    text-align: center;
+}
 
+.card-favorito img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+body{
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.produto{
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.produto img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.info{
+    flex: 1;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.preco{
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.descricao{
+    margin: 20px 0;
+}
+
+button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background: #333;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Ek vision</title>
@@ -14,19 +13,20 @@
     <header>
 
         <nav class="menu">
-            <a href="#novidades">Novidaes </a>
-            <a href="camisetas.html">Camisetas </a>
+            <nav class="menu">
+            <a href="index.html">Novidades</a>
+            <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
-            <a href="calcas.html">Calcas</a>
+            <a href="calcas.html">Calças</a>
             <a href="tenis.html">Tenis</a>
             <a href="carrinho.html">Carrinho</a>
             <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
-            <a href="pedidos.html">pedidos</a>
+            <a href="pedidos.html">Pedidos</a>
             <a href="pesquisa.html">Pesquisa</a>
             <a href="contato.html">Fale conosco</a>
             <a href="sobre.html">Sobre</a>
-
+        </nav>
         </nav>
 
     </header>
@@ -35,7 +35,7 @@
 
             <h1>Finalizar Compra</h1>
 
-            <form id="dados pessoais">
+            <form id="dados-pessoais">
                 <input type="text" id="nome" placeholder="Nome Completo" required>
 
                 <input type="email" id="email" placeholder="E-mail" required>
@@ -51,27 +51,35 @@
 
 
 
-                <button>Aplicar</button>
+                <button type="button">Aplicar</button>
 
                 <h3>Forma de Pagamento</h3>
 
-                <select>
+                <select id="pagamento">
                     <option>Cartão de Crédito</option>
                     <option>PIX</option>
                     <option>Boleto</option>
                 </select>
 
-                <button type="submit">
+                <button type="button" id="btnFinalizar">
                     Finalizar Pedido
                 </button>
 
+                <p id="msgFeedback"></p>
             </form>
-
-            <a href="carrinho.html" class="voltar">
-                ← Voltar ao Carrinho
-            </a>
-
         </div>
 
     </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>© 2026 EK Vision - Todos os direitos reservados</p>
+
+        <a href="sobre.html">Sobre</a> |
+        <a href="contato.html">Fale Conosco</a> |
+        <a href="faq.html">FAQ</a>
+    </footer>
+
+
 </body>
+
+</html>

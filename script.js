@@ -69,11 +69,36 @@ btnLimpar.addEventListener("click", function () {
     msgFeedback.textContent = "";
 });
  
-// ─── Função auxiliar para exibir erro ───
-function mostrarErro(msg) {
-    msgFeedback.textContent = msg;
-    msgFeedback.style.color = "red";
+const produtos = {
+    1: {
+        nome: "Camiseta Oversized",
+        preco: "R$ 89,90",
+        imagem: "img/camiseta1.jpg"
+    },
+
+    2: {
+        nome: "Camiseta Estampada",
+        preco: "R$ 79,90",
+        imagem: "img/camiseta2.jpg"
+    },
+
+    3: {
+        nome: "Camiseta Básica",
+        preco: "R$ 59,90",
+        imagem: "img/camiseta3.jpg"
+    }
+};
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+if(produtos[id]){
+    document.getElementById("nome").textContent =
+        produtos[id].nome;
+
+    document.getElementById("preco").textContent =
+        produtos[id].preco;
+
+    document.getElementById("imagem").src =
+        produtos[id].imagem;
 }
-
-
-    
