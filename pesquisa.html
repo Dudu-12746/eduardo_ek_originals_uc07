@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
 
 <head>
+
+    <!-- Codificação UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone da aba -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <!-- Arquivo de estilos -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Ek vision</title>
+
+    <!-- Título da página -->
+    <title>Ek Vision</title>
+
 </head>
 
 <body>
+
+    <!-- Cabeçalho -->
     <header>
+
+        <!-- Menu principal -->
         <nav class="menu">
             <a href="index.html">Novidades</a>
             <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
             <a href="calcas.html">Calças</a>
-            <a href="tenis.html">Tenis</a>
+            <a href="tenis.html">Tênis</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="favoritos.html">Favoritos</a>
             <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
             <a href="pedidos.html">Pedidos</a>
@@ -28,41 +48,67 @@
         </nav>
 
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
+
+        <!-- Área de pesquisa -->
         <div class="pesquisa-container">
+
             <h1>Pesquisar Produtos</h1>
 
-            <input type="text" placeholder="Digite o nome do produto..." class="barra-pesquisa">
+            <!-- Campo para digitar a pesquisa -->
+            <input type="text"
+                   placeholder="Digite o nome do produto..."
+                   class="barra-pesquisa">
 
+            <!-- Botão de pesquisar -->
             <button class="btn-pesquisa">Pesquisar</button>
 
+            <!-- Resultados encontrados -->
             <div class="resultados">
 
+                <!-- Produto 1 -->
                 <div class="produto">
                     <img src="img/camiseta1.webp" alt="Camiseta">
                     <h3>Camiseta Oversized</h3>
                     <p>R$ 89,90</p>
                 </div>
 
+                <!-- Produto 2 -->
                 <div class="produto">
                     <img src="img/moletom1.jpg" alt="Moletom">
                     <h3>Moletom Street</h3>
                     <p>R$ 149,90</p>
                 </div>
 
+                <!-- Produto 3 -->
                 <div class="produto">
                     <img src="img/calca1.webp" alt="Calça">
                     <h3>Calça Cargo</h3>
                     <p>R$ 129,90</p>
+                </div>
+
+            </div> <!-- Fecha resultados -->
+
+        </div> <!-- Fecha pesquisa-container -->
 
     </main>
+
+    <!-- Rodapé -->
     <footer>
+
         <p>© 2026 EK Vision - Todos os direitos reservados</p>
 
         <a href="sobre.html">Sobre</a> |
         <a href="contato.html">Fale Conosco</a> |
         <a href="faq.html">FAQ</a>
+
     </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>

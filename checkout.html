@@ -1,84 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
 
 <head>
+
+    <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
+
+    <!-- Torna a página responsiva em celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo de estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Ek vision</title>
+
+    <!-- Título da página -->
+    <title>EK Vision</title>
+
 </head>
 
 <body>
+
+    <!-- Cabeçalho da página -->
     <header>
 
+        <!-- Menu de navegação -->
         <nav class="menu">
-            <nav class="menu">
+
             <a href="index.html">Novidades</a>
             <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
             <a href="calcas.html">Calças</a>
-            <a href="tenis.html">Tenis</a>
+            <a href="tenis.html">Tênis</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="favoritos.html">Favoritos</a>
             <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
             <a href="pedidos.html">Pedidos</a>
             <a href="pesquisa.html">Pesquisa</a>
             <a href="contato.html">Fale conosco</a>
             <a href="sobre.html">Sobre</a>
-        </nav>
+
         </nav>
 
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
+
+        <!-- Área do checkout -->
         <div class="checkout">
 
+            <!-- Título da página -->
             <h1>Finalizar Compra</h1>
 
+            <!-- Formulário de dados do cliente -->
             <form id="dados-pessoais">
+
+                <!-- Campo para o nome completo -->
                 <input type="text" id="nome" placeholder="Nome Completo" required>
 
+                <!-- Campo para o e-mail -->
                 <input type="email" id="email" placeholder="E-mail" required>
 
+                <!-- Campo para o endereço -->
                 <input type="text" id="endereco" placeholder="Endereço" required>
 
+                <!-- Campo para a cidade -->
                 <input type="text" id="cidade" placeholder="Cidade" required>
 
+                <!-- Campo para o CEP -->
                 <input type="text" id="cep" placeholder="CEP" required>
 
+                <!-- Campo para inserir um cupom de desconto -->
                 <input type="text" id="cupom" placeholder="Cupom de desconto">
 
+                <!-- Botão para aplicar o cupom -->
+                <button type="button">
+                    Aplicar
+                </button>
 
-
-
-                <button type="button">Aplicar</button>
-
+                <!-- Título da forma de pagamento -->
                 <h3>Forma de Pagamento</h3>
 
+                <!-- Lista de formas de pagamento -->
                 <select id="pagamento">
                     <option>Cartão de Crédito</option>
                     <option>PIX</option>
                     <option>Boleto</option>
                 </select>
 
+                <!-- Botão para finalizar a compra -->
                 <button type="button" id="btnFinalizar">
                     Finalizar Pedido
                 </button>
 
+                <!-- Área onde será exibida uma mensagem de sucesso ou erro -->
                 <p id="msgFeedback"></p>
+
             </form>
+
         </div>
 
     </main>
+
+    <!-- Arquivo JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Rodapé -->
     <footer>
+
+        <!-- Direitos autorais -->
         <p>© 2026 EK Vision - Todos os direitos reservados</p>
 
+        <!-- Links úteis -->
         <a href="sobre.html">Sobre</a> |
         <a href="contato.html">Fale Conosco</a> |
         <a href="faq.html">FAQ</a>
-    </footer>
 
+    </footer>
 
 </body>
 

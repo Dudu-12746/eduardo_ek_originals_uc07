@@ -1,63 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
 
 <head>
+
+    <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
+
+    <!-- Torna a página responsiva em celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <!-- Arquivo CSS principal -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Ek vision</title>
+
+    <!-- Título da página -->
+    <title>EK Vision</title>
+
 </head>
 
 <body>
+
+    <!-- Cabeçalho da página -->
     <header>
+
+        <!-- Menu principal de navegação -->
         <nav class="menu">
-            <nav class="menu">
+
+            <!-- Links das páginas do site -->
             <a href="index.html">Novidades</a>
             <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
             <a href="calcas.html">Calças</a>
-            <a href="tenis.html">Tenis</a>
+            <a href="tenis.html">Tênis</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="favoritos.html">Favoritos</a>
             <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
             <a href="pedidos.html">Pedidos</a>
             <a href="pesquisa.html">Pesquisa</a>
             <a href="contato.html">Fale conosco</a>
             <a href="sobre.html">Sobre</a>
+
         </nav>
-    
+
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
-        <section id="contato">
-            <h2>Fale conosco</h2>
-            <form id="formContato">
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
 
+        <!-- Seção do formulário de contato -->
+        <section id="contato">
+
+            <!-- Título da seção -->
+            <h2>Fale conosco</h2>
+
+            <!-- Formulário de contato -->
+            <form id="formContato">
+
+                <!-- Campo para o nome -->
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required>
+
+                <!-- Campo para o e-mail -->
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                    required>
+
+                <!-- Campo para o telefone -->
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Digite seu telefone"
+                    required>
+
+                <!-- Campo para escrever a mensagem -->
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Digite sua mensagem"
+                    required></textarea>
+
+                <!-- Botões do formulário -->
                 <div class="botoes">
-                    <button type="button" id="btnLimpar">Limpar formulário</button>
-                    <button type="button" id="btnEnviar">Enviar mensagem</button>
+
+                    <!-- Limpa todos os campos -->
+                    <button type="button" id="btnLimpar">
+                        Limpar formulário
+                    </button>
+
+                    <!-- Envia os dados do formulário -->
+                    <button type="button" id="btnEnviar">
+                        Enviar mensagem
+                    </button>
+
                 </div>
+
             </form>
 
+            <!-- Área onde será exibida a mensagem de sucesso ou erro -->
             <p id="msgFeedback"></p>
+
         </section>
+
     </main>
 
+    <!-- Rodapé -->
     <footer>
+
+        <!-- Direitos autorais -->
         <p>© 2026 EK Vision - Todos os direitos reservados</p>
 
+        <!-- Links úteis -->
         <a href="sobre.html">Sobre</a> |
         <a href="contato.html">Fale Conosco</a> |
         <a href="faq.html">FAQ</a>
+
     </footer>
 
+    <!-- Arquivo JavaScript responsável pelas funcionalidades -->
     <script src="script.js"></script>
+
 </body>
 
 </html>

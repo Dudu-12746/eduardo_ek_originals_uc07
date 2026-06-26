@@ -1,76 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
 
 <head>
+
+    <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
+
+    <!-- Torna a página responsiva em celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <!-- Arquivo CSS principal -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Ek vision</title>
+
+    <!-- Título da página -->
+    <title>EK Vision</title>
 
 </head>
 
 <body>
+
+    <!-- Cabeçalho -->
     <header>
+
+        <!-- Container do menu -->
         <div class="menu">
-           <nav class="menu">
-            <a href="index.html">Novidades</a>
-            <a href="camisetas.html">Camisetas</a>
-            <a href="moletons.html">Moletons</a>
-            <a href="calcas.html">Calças</a>
-            <a href="tenis.html">Tenis</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="conta.html">Conta</a>
-            <a href="pedidos.html">Pedidos</a>
-            <a href="pesquisa.html">Pesquisa</a>
-            <a href="contato.html">Fale conosco</a>
-            <a href="sobre.html">Sobre</a>
-        </nav>
 
-    </header>
-    <main>
-        <h1>Seu Carrinho</h1>
+            <!-- Menu de navegação -->
+            <nav class="menu">
 
-        <div class="item">
+                <a href="index.html">Novidades</a>
+                <a href="camisetas.html">Camisetas</a>
+                <a href="moletons.html">Moletons</a>
+                <a href="calcas.html">Calças</a>
+                <a href="tenis.html">Tênis</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="favoritos.html">Favoritos</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="conta.html">Conta</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="pesquisa.html">Pesquisa</a>
+                <a href="contato.html">Fale conosco</a>
+                <a href="sobre.html">Sobre</a>
 
-            <img src="img/camiseta1.webp" alt="Camiseta">
-
-            <div class="info">
-                <h2>Camiseta Oversized</h2>
-                <p>R$ 89,90</p>
-            </div>
-
-            <button>Remover</button>
+            </nav>
 
         </div>
 
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Título da página -->
+        <h1>Seu Carrinho</h1>
+
+        <!-- Item do carrinho -->
+        <div class="item">
+
+            <!-- Imagem do produto -->
+            <img src="img/camiseta1.webp" alt="Camiseta">
+
+            <!-- Informações do produto -->
+            <div class="info">
+
+                <h2>Camiseta Oversized</h2>
+
+                <p>R$ 89,90</p>
+
+            </div>
+
+            <!-- Botão para remover o produto -->
+            <button>
+                Remover
+            </button>
+
+        </div>
+
+        <!-- Área do valor total -->
         <div class="total">
+
             <h2>Total: R$ 89,90</h2>
 
+            <!-- Link para a página de checkout -->
             <a href="checkout.html">
+
                 <button class="finalizar">
                     Finalizar Compra
                 </button>
+
             </a>
+
         </div>
 
-
-
-
     </main>
+
+    <!-- Rodapé -->
     <footer>
+
+        <!-- Direitos autorais -->
         <p>© 2026 EK Vision - Todos os direitos reservados</p>
 
+        <!-- Links úteis -->
         <a href="sobre.html">Sobre</a> |
         <a href="contato.html">Fale Conosco</a> |
         <a href="faq.html">FAQ</a>
+
     </footer>
 
-
-
-
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,115 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Ek vision</title>
 
+    <!-- Define a codificação de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Torna a página responsiva em celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone exibido na aba do navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <!-- Arquivo CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importa a fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Título da página -->
+    <title>Calças — EK Vision</title>
 
 </head>
 
 <body>
+
+    <!-- Cabeçalho da página -->
     <header>
+
+        <!-- Menu de navegação -->
         <nav class="menu">
             <a href="index.html">Novidades</a>
             <a href="camisetas.html">Camisetas</a>
             <a href="moletons.html">Moletons</a>
-            <a href="calcas.html">Calças</a>
-            <a href="tenis.html">Tenis</a>
+            <a href="calcas.html" class="active">Calças</a>
+            <a href="tenis.html">Tênis</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="favoritos.html">Favoritos</a>
             <a href="checkout.html">Checkout</a>
             <a href="conta.html">Conta</a>
             <a href="pedidos.html">Pedidos</a>
             <a href="pesquisa.html">Pesquisa</a>
-            <a href="contato.html">Fale conosco</a>
+            <a href="contato.html">Fale Conosco</a>
             <a href="sobre.html">Sobre</a>
         </nav>
 
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
-       <h1>Calças</h1>
 
-<div class="grid-container">
+        <!-- Título da página -->
+        <h1>Calças</h1>
 
-    <div class="card">
-        <img src="img/calca1.webp" alt="Calça">
-        <h3>Calça Cargo</h3>
-        <p>R$ 129,90</p>
-    </div>
+        <!-- Grade onde ficam os produtos -->
+        <div class="grid-container">
 
-    <div class="card">
-        <img src="img/calca2.jpg" alt="Calça">
-        <h3>Calça Jeans</h3>
-        <p>R$ 149,90</p>
-    </div>
+            <!-- Produto 1 -->
+            <div class="card">
+                <img src="img/calca1.webp" alt="Calça Cargo">
+                <h3>Calça Cargo</h3>
+                <p>R$ 129,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca3.jpg" alt="Calça">
-        <h3>Calça Moletom</h3>
-        <p>R$ 119,90</p>
-    </div>
+            <!-- Produto 2 -->
+            <div class="card">
+                <img src="img/calca2.jpg" alt="Calça Jeans">
+                <h3>Calça Jeans</h3>
+                <p>R$ 149,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca4.webp" alt="Calça">
-        <h3>Calça Jogger Masculina para Academia Streetwear</h3>
-        <p>R$ 269,00</p>
-    </div>
+            <!-- Produto 3 -->
+            <div class="card">
+                <img src="img/calca3.jpg" alt="Calça Moletom">
+                <h3>Calça Moletom</h3>
+                <p>R$ 119,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca5.webp" alt="Calça">
-        <h3>Calça Cargo Streetwear Masculina Veludo Canelado Areia</h3>
-        <p>R$ 149,90</p>
-    </div>
+            <!-- Produto 4 -->
+            <div class="card">
+                <img src="img/calca4.webp" alt="Calça Jogger">
+                <h3>Calça Jogger Masculina para Academia Streetwear</h3>
+                <p>R$ 269,00</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca6.webp" alt="Calça">
-        <h3>Calça Jeans Masculina Wide Leg "Punk Wear"</h3>
-        <p>R$ 429,00</p>
-    </div>
+            <!-- Produto 5 -->
+            <div class="card">
+                <img src="img/calca5.webp" alt="Calça Cargo Veludo">
+                <h3>Calça Cargo Streetwear Masculina Veludo Canelado Areia</h3>
+                <p>R$ 149,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca9.webp" alt="Calça">
-        <h3>Calça Treze Core Cargo Bege</h3>
-        <p>R$ 119,90</p>
-    </div>
+            <!-- Produto 6 -->
+            <div class="card">
+                <img src="img/calca6.webp" alt="Calça Wide Leg Punk">
+                <h3>Calça Jeans Masculina Wide Leg "Punk Wear"</h3>
+                <p>R$ 429,00</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca7.webp" alt="Calça">
-        <h3>Calça Cargo Jeans Preto</h3>
-        <p>R$ 269,00</p>
-    </div>
+            <!-- Produto 7 -->
+            <div class="card">
+                <img src="img/calca9.webp" alt="Calça Treze Core">
+                <h3>Calça Treze Core Cargo Bege</h3>
+                <p>R$ 119,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca8.webp" alt="Calça">
-        <h3>Calça Two Loves Black</h3>
-        <p>R$ 119,90</p>
-    </div>
+            <!-- Produto 8 -->
+            <div class="card">
+                <img src="img/calca7.webp" alt="Calça Cargo Jeans Preto">
+                <h3>Calça Cargo Jeans Preto</h3>
+                <p>R$ 269,00</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-    <div class="card">
-        <img src="img/calca10.webp" alt="Calça">
-        <h3>Calça Baggy de Couro Preto Pitch Black</h3>
-        <p>R$ 429,00</p>
-    </div>
+            <!-- Produto 9 -->
+            <div class="card">
+                <img src="img/calca8.webp" alt="Calça Two Loves Black">
+                <h3>Calça Two Loves Black</h3>
+                <p>R$ 119,90</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-</div>
+            <!-- Produto 10 -->
+            <div class="card">
+                <img src="img/calca10.webp" alt="Calça Baggy de Couro">
+                <h3>Calça Baggy de Couro Preto Pitch Black</h3>
+                <p>R$ 429,00</p>
+                <button class="btn-card">Adicionar ao Carrinho</button>
+            </div>
 
-
+        </div>
 
     </main>
-    <footer>
-        <p>© 2026 EK Vision - Todos os direitos reservados</p>
 
+    <!-- Rodapé da página -->
+    <footer>
+
+        <!-- Direitos autorais -->
+        <p>© 2026 EK Vision — Todos os direitos reservados</p>
+
+        <!-- Links úteis -->
         <a href="sobre.html">Sobre</a> |
         <a href="contato.html">Fale Conosco</a> |
         <a href="faq.html">FAQ</a>
+
     </footer>
 
-
-
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
